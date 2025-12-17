@@ -113,9 +113,9 @@ How do we *prove* that agents will behave correctly?
   Expert interviews that visualize concepts on paper, similar to Brian Douglas for control theory. They don't just show code; they visualize the state space.
   
   **Essential videos:**
-  - **"Software Testing vs. Formal Verification"** - A perfect primer on why testing is never enough
-  - **"The Halting Problem"** - Essential context for why we can't just "check" everything
-  - **"Z3 Theorem Prover"** - A rare accessible intro to SMT solvers (the engine behind formal verification)
+  - **"Software Testing vs. Formal Verification"** - A perfect primer on why testing is never enough.
+  - **"The Halting Problem"** - Essential context for why we can't just "check" everything.
+  - **"Z3 Theorem Prover"** - A rare accessible intro to SMT solvers (the engine behind formal verification).
 
 ### Formal Methods
 - **Model Checking**: Verify properties of finite-state systems
@@ -174,8 +174,8 @@ The "compiler layer" for reliable code generation - ensuring deterministic outpu
   The closest to a "Khan Academy / Brian Douglas" for theoretical CS. Uses a digital whiteboard to visually draw Finite State Machines (FSMs) and walks through the logic step-by-step.
   
   **Essential playlist**: "Theory of Computation"
-  - Watch videos on **DFA** (Deterministic Finite Automata) 
-  - Watch videos on **Context-Free Grammars**
+  - Watch videos on **DFA** (Deterministic Finite Automata).
+  - Watch videos on **Context-Free Grammars**.
   
   This is the visual guide to the Sipser textbook - perfect for understanding the foundations of constrained generation.
 
