@@ -71,7 +71,11 @@ Understanding agents as dynamical systems opens up powerful analytical tools fro
   Classic textbook for understanding closed-loop control, which is fundamental to reliable agent design.
 
 - **"How Complex Systems Fail" by Richard Cook**  
-  A short 4-page paper from the medical domain on the philosophy of failure. Key insight: "Failure is not a root cause; it is a consequence of complex interactions." Essential reading for understanding why "user error" is a myth.
+  A short 4-page paper from the medical domain on the philosophy of failure. 
+  
+  **Key insight**: "Failure is not a root cause; it is a consequence of complex interactions." 
+  
+  **Why essential**: Provides the vocabulary to understand that "user error" is a myth and reframes how we think about system reliability.
 
 ### Key Concepts
 - **Stability**: Lyapunov stability, BIBO stability
@@ -155,7 +159,7 @@ The "compiler layer" for reliable code generation - ensuring deterministic outpu
 
 ### SMT Solvers and Symbolic Execution
 - **"Programming Z3"** (SMT Solver Tutorial)  
-  Z3 is a "theorem prover" from Microsoft Research. State a logic problem (e.g., "Is there any input X that crashes this function?"), and it finds the answer. This is the engine behind symbolic execution and modern verification - the "reasoning engine" for code.
+  Z3 is an SMT (Satisfiability Modulo Theories) solver from Microsoft Research. You state a logic problem (e.g., "Is there any input X that crashes this function?"), and Z3 determines satisfiability. This is the engine behind symbolic execution and modern verification - the "reasoning engine" for code.
   
   **Action**: Try the Python bindings (`z3-solver`). It feels like magic.
 
@@ -232,7 +236,7 @@ Understanding reliability, scalability, and how complex systems fail in producti
 
 ### Distributed Systems Reliability
 - **"Designing Data-Intensive Applications" (DDIA) by Martin Kleppmann**  
-  If you haven't read this, drop everything and read it. The definitive guide to modern systems reliability, explaining "reliability," "scalability," and "maintainability" not as buzzwords but as trade-offs in data encoding, replication, and partitioning.
+  Essential reading and the definitive guide to modern systems reliability. Explains "reliability," "scalability," and "maintainability" not as buzzwords but as trade-offs in data encoding, replication, and partitioning.
   
   **Focus**: Chapters 5-9 (Replication, Partitioning, Consistency, Consensus)
 
@@ -243,7 +247,7 @@ Understanding reliability, scalability, and how complex systems fail in producti
 
 ### System Failure Philosophy  
 - **"How Complex Systems Fail" by Richard Cook**  
-  A short 4-page read on the philosophy of failure. Already mentioned in Control Theory section above - essential reading on understanding that "user error" is a myth and failure is a consequence of complex interactions.
+  A short 4-page read on the philosophy of failure (also referenced in Control Theory section). Essential for understanding system-level thinking about reliability.
 
 ---
 
