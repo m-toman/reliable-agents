@@ -288,12 +288,15 @@ Agent learning and alignment with intended objectives.
 Long-term research directions (6-12 months out).
 
 ### World Models and Predictive Architectures
-- **JEPA Papers (Joint Embedding Predictive Architectures)** by Yann LeCun  
-  Theory of world models that predict abstract states rather than pixels.
+- **["A Path Towards Autonomous Machine Intelligence"](https://openreview.net/forum?id=BZ5a1r-kVsf)** by Yann LeCun (2022)  
+  Position paper on Joint Embedding Predictive Architectures (JEPA) for world models.
 
 ### Planning with Language Models
-- **Learning to Plan Papers**  
-  Papers on "Chain of Hindsight" and "Tree-of-Thoughts" showing how to merge classical planning with modern learning.
+- **["Chain of Hindsight Aligns Language Models with Feedback"](https://arxiv.org/abs/2302.02676)** by Liu et al. (2023)  
+  Learning from feedback sequences to improve planning.
+  
+- **["Tree of Thoughts: Deliberate Problem Solving with Large Language Models"](https://arxiv.org/abs/2305.10601)** by Yao et al. (2023)  
+  Exploring reasoning paths as trees for complex problem solving.
 
 ---
 
