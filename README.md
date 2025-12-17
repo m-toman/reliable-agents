@@ -143,7 +143,7 @@ How do we *prove* that agents will behave correctly?
 - **[TLA+ Video Course by Leslie Lamport](https://lamport.azurewebsites.net/video/videos.html)** 🎥  
   Leslie Lamport (Turing Award winner) is the "Brian Douglas" of this field - quirky, uses funny examples (like "Die Hard" water jug puzzles), and focuses entirely on thinking rather than syntax.
   
-  **The "Aha" moment**: TLA+ is not a programming language; it is a way to write down the "physics" of your system to see if the laws of nature allow it to crash.
+  **The aha moment**: TLA+ is not a programming language; it is a way to write down the "physics" of your system to see if the laws of nature allow it to crash.
   
   **Start here**: Lectures 1-4 to understand "system state" and how to model distributed agent interactions.
 
@@ -187,8 +187,6 @@ The "compiler layer" for reliable code generation - ensuring deterministic outpu
 
 - **[Guided Hacking - Z3 Explained (YouTube)](https://www.youtube.com/watch?v=56IIrBZy9Rc)** 🎥  
   SMT solvers are usually taught in purely mathematical terms. This video breaks down Z3 as a practical tool for "solving puzzles," which is exactly how you should view it as an architect. Shows you how to turn a logic problem into Python code that Z3 can solve.
-  
-  **Video**: "Z3 Explained - Satisfiability Modulo Theories"
 
 ---
 
