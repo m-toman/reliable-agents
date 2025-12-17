@@ -108,6 +108,15 @@ Reliable agents need principled approaches to sequential decision-making under u
 
 How do we *prove* that agents will behave correctly?
 
+### Video Resources
+- **[Computerphile - Formal Verification & Logic (YouTube)](https://www.youtube.com/user/Computerphile)** 🎥  
+  Expert interviews that visualize concepts on paper, similar to Brian Douglas for control theory. They don't just show code; they visualize the state space.
+  
+  **Essential videos:**
+  - **"Software Testing vs. Formal Verification"** - A perfect primer on why testing is never enough
+  - **"The Halting Problem"** - Essential context for why we can't just "check" everything
+  - **"Z3 Theorem Prover"** - A rare accessible intro to SMT solvers (the engine behind formal verification)
+
 ### Formal Methods
 - **Model Checking**: Verify properties of finite-state systems
   - Tools: SPIN, NuSMV, TLA+
@@ -131,8 +140,12 @@ How do we *prove* that agents will behave correctly?
   
   **The moat**: Most architects guess how their distributed agents will interact. With TLA+, you can model interactions, run the model checker, and find the exact sequence that causes failures.
 
-- **[TLA+ Video Course by Leslie Lamport](https://lamport.azurewebsites.net/video/videos.html)**  
-  Learn TLA+ (Temporal Logic of Actions) from its creator for specifying and verifying concurrent and distributed systems.
+- **[TLA+ Video Course by Leslie Lamport](https://lamport.azurewebsites.net/video/videos.html)** 🎥  
+  Leslie Lamport (Turing Award winner) is the "Brian Douglas" of this field - quirky, uses funny examples (like "Die Hard" water jug puzzles), and focuses entirely on thinking rather than syntax.
+  
+  **The "Aha" moment**: TLA+ is not a programming language; it is a way to write down the "physics" of your system to see if the laws of nature allow it to crash.
+  
+  **Start here**: Lectures 1-4 to understand "system state" and how to model distributed agent interactions.
 
 ---
 
@@ -157,11 +170,25 @@ The "compiler layer" for reliable code generation - ensuring deterministic outpu
   
   Skip the complexity theory (P vs NP) unless you enjoy the mathematics.
 
+- **[Easy Theory - Theory of Computation (YouTube)](https://www.youtube.com/@easytheory)** 🎥  
+  The closest to a "Khan Academy / Brian Douglas" for theoretical CS. Uses a digital whiteboard to visually draw Finite State Machines (FSMs) and walks through the logic step-by-step.
+  
+  **Essential playlist**: "Theory of Computation"
+  - Watch videos on **DFA** (Deterministic Finite Automata) 
+  - Watch videos on **Context-Free Grammars**
+  
+  This is the visual guide to the Sipser textbook - perfect for understanding the foundations of constrained generation.
+
 ### SMT Solvers and Symbolic Execution
 - **"Programming Z3"** (SMT Solver Tutorial)  
   Z3 is an SMT (Satisfiability Modulo Theories) solver from Microsoft Research. You state a logic problem (e.g., "Is there any input X that crashes this function?"), and Z3 determines satisfiability. This is the engine behind symbolic execution and modern verification - the "reasoning engine" for code.
   
   **Action**: Try the Python bindings (`z3-solver`). It feels like magic.
+
+- **[Guided Hacking - Z3 Explained (YouTube)](https://www.youtube.com/watch?v=56IIrBZy9Rc)** 🎥  
+  SMT solvers are usually taught in purely mathematical terms. This video breaks down Z3 as a practical tool for "solving puzzles," which is exactly how you should view it as an architect. Shows you how to turn a logic problem into Python code that Z3 can solve.
+  
+  **Video**: "Z3 Explained - Satisfiability Modulo Theories"
 
 ---
 
