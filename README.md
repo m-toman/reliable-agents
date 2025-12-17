@@ -1,6 +1,6 @@
 # Reliable Agents: A Control-Theoretic Perspective
 
-A curated collection of resources for building reliable AI agents through the lens of control theory, formal verification, planning, and formal languages. This is not your typical agent-building guide—instead, we focus on the mathematical and systems-engineering foundations that make agents truly reliable.
+A curated collection of resources for building reliable AI agents through control theory, formal verification, planning, and formal languages. Rather than focusing on implementation patterns, this guide emphasizes the mathematical and systems-engineering foundations for agent reliability.
 
 ## Table of Contents
 - [Getting Started: Architect's Core](#getting-started-architects-core)
@@ -20,7 +20,7 @@ A curated collection of resources for building reliable AI agents through the le
 
 ## Getting Started: Architect's Core
 
-Essential resources for immediate utility in building reliable agents. Start here to understand industry baselines and fundamental approaches.
+Resources for immediate practical application in building reliable agents.
 
 ### Industry Best Practices
 - **[Google Agent Whitepapers](https://deepmind.google/)**
@@ -28,28 +28,22 @@ Essential resources for immediate utility in building reliable agents. Start her
   - **Context Engineering**: Sessions and memory management
   - **Agent Quality**: Evaluation and reliability metrics
   - **Prototype to Production**: Scaling considerations
-  
-  **Goal**: Understand the industry baseline to know what you're improving upon.
 
 ### Core AI Textbook
-- **"Artificial Intelligence: A Modern Approach" (AIMA) by Stuart Russell and Peter Norvig** [AIMA Website](http://aima.cs.berkeley.edu/)
+- **"Artificial Intelligence: A Modern Approach" (AIMA)** by Stuart Russell and Peter Norvig ([website](http://aima.cs.berkeley.edu/))
   
   **Focus chapters:**
-  - **Chapter 3: Solving Problems by Searching** - The basis of "reasoning" through state-space search
-  - **Chapters 10 & 11: Classical Planning** - The foundation of agent plans (STRIPS, PDDL)
-  - **Chapters 16 & 17: Utility Theory & MDPs** - How agents make decisions under uncertainty
-  
-  **Goal**: Replace "prompt engineering" with principled state-space search and planning.
+  - **Chapter 3: Solving Problems by Searching** - State-space search fundamentals
+  - **Chapters 10 & 11: Classical Planning** - Agent planning with STRIPS and PDDL
+  - **Chapters 16 & 17: Utility Theory & MDPs** - Decision-making under uncertainty
 
 ### Learning from Human Feedback
-- **"The RLHF Book" by Nathan Lambert et al.** [RLHF Book](https://rlhfbook.com/)
+- **["The RLHF Book"](https://rlhfbook.com/)** by Nathan Lambert et al.
   
   **Focus chapters:**
-  - **Chapter 7: Reward Modeling** - Crucial for building simulators and evaluation functions
+  - **Chapter 7: Reward Modeling** - Building simulators and evaluation functions
   - **Chapter 9: Preference Data** - Collecting data from agent successes and failures
   - **Chapter 8: Advanced RL** - PPO/DPO concepts for preference learning
-  
-  **Goal**: Understand how to teach an agent to prefer valid plans over invalid ones.
 
 ---
 
@@ -58,24 +52,22 @@ Essential resources for immediate utility in building reliable agents. Start her
 Understanding agents as dynamical systems opens up powerful analytical tools from control theory.
 
 ### Videos and Tutorials
-- **[Brian Douglas - Control Systems Lectures (YouTube)](https://www.youtube.com/user/ControlLectures)** 🎥  
-  Exceptional series covering feedback control, stability analysis, and state-space methods. Essential for understanding how to maintain agent behavior within safe boundaries.
+- **[Brian Douglas - Control Systems Lectures](https://www.youtube.com/user/ControlLectures)** 🎥  
+  Covers feedback control, stability analysis, and state-space methods for maintaining agent behavior within safe boundaries.
   
-  **Recommended**: Start with the first 2 videos on Classical Control Theory to grasp the fundamentals of feedback loops and stability.
+  **Recommended**: Start with the first 2 videos on Classical Control Theory.
 
 ### Books
-- **"Engineering a Safer World: Systems Thinking Applied to Safety" by Nancy Leveson**  
-  Introduces STAMP (System-Theoretic Accident Model and Processes). Critical reading for understanding how complex systems fail and how to design safety constraints. This moves beyond "component failure" (the LLM hallucinated) to "interaction failure" (the system allowed the hallucination to crash the DB). [MIT Press](https://mitpress.mit.edu/9780262533690/engineering-a-safer-world/)
+- **["Engineering a Safer World: Systems Thinking Applied to Safety"](https://mitpress.mit.edu/9780262533690/engineering-a-safer-world/)** by Nancy Leveson  
+  Introduces STAMP (System-Theoretic Accident Model and Processes). Moves beyond component-level failures to interaction failures in complex systems.
 
-- **"Feedback Control of Dynamic Systems" by Franklin, Powell, and Emami-Naeini**  
-  Classic textbook for understanding closed-loop control, which is fundamental to reliable agent design.
+- **"Feedback Control of Dynamic Systems"** by Franklin, Powell, and Emami-Naeini  
+  Classic textbook on closed-loop control fundamentals for reliable system design.
 
-- **"How Complex Systems Fail" by Richard Cook**  
-  A short 4-page paper from the medical domain on the philosophy of failure. 
+- **["How Complex Systems Fail"](https://how.complexsystems.fail/)** by Richard Cook  
+  A 4-page paper on the philosophy of failure in complex systems.
   
-  **Key insight**: "Failure is not a root cause; it is a consequence of complex interactions." 
-  
-  **Why essential**: Provides the vocabulary to understand that "user error" is a myth and reframes how we think about system reliability.
+  **Key insight**: Failure results from complex interactions, not single root causes.
 
 ### Key Concepts
 - **Stability**: Lyapunov stability, BIBO stability
@@ -90,11 +82,11 @@ Understanding agents as dynamical systems opens up powerful analytical tools fro
 Reliable agents need principled approaches to sequential decision-making under uncertainty.
 
 ### Foundational Resources
-- **"Artificial Intelligence: A Modern Approach" (AIMA) by Stuart Russell and Peter Norvig**  
-  Chapters on planning (classical, conditional, continuous), MDPs, POMDPs, and decision theory. The definitive reference. [AIMA Website](http://aima.cs.berkeley.edu/)
+- **"Artificial Intelligence: A Modern Approach" (AIMA)** by Stuart Russell and Peter Norvig ([website](http://aima.cs.berkeley.edu/))  
+  Chapters on planning (classical, conditional, continuous), MDPs, POMDPs, and decision theory.
 
-- **"Decision Making Under Uncertainty: Theory and Application" by Mykel Kochenderfer**  
-  Covers MDPs, POMDPs, and reinforcement learning with a focus on real-world applications.
+- **"Decision Making Under Uncertainty: Theory and Application"** by Mykel Kochenderfer  
+  Covers MDPs, POMDPs, and reinforcement learning for real-world applications.
 
 ### Planning Paradigms
 - **Classical Planning**: STRIPS, PDDL, GraphPlan
@@ -109,13 +101,13 @@ Reliable agents need principled approaches to sequential decision-making under u
 How do we *prove* that agents will behave correctly?
 
 ### Video Resources
-- **[Computerphile - Formal Verification & Logic (YouTube)](https://www.youtube.com/user/Computerphile)** 🎥  
-  Expert interviews that visualize concepts on paper, similar to Brian Douglas for control theory. They don't just show code; they visualize the state space.
+- **[Computerphile - Formal Verification & Logic](https://www.youtube.com/user/Computerphile)** 🎥  
+  Expert interviews visualizing formal verification concepts.
   
   **Essential videos:**
-  - **"Software Testing vs. Formal Verification"** - A perfect primer on why testing is never enough.
-  - **"The Halting Problem"** - Essential context for why we can't just "check" everything.
-  - **"Z3 Theorem Prover"** - A rare accessible intro to SMT solvers (the engine behind formal verification).
+  - **"Software Testing vs. Formal Verification"** - Why testing alone is insufficient.
+  - **"The Halting Problem"** - Why we can't exhaustively verify all programs.
+  - **"Z3 Theorem Prover"** - Introduction to SMT solvers.
 
 ### Formal Methods
 - **Model Checking**: Verify properties of finite-state systems
@@ -132,75 +124,69 @@ How do we *prove* that agents will behave correctly?
 - **Contracts and Assertions**: Pre/post conditions, invariants
 
 ### Resources
-- **"Principles of Model Checking" by Christel Baier and Joost-Pieter Katoen**  
-  Comprehensive textbook covering temporal logics, model checking algorithms, and verification techniques.
+- **"Principles of Model Checking"** by Christel Baier and Joost-Pieter Katoen  
+  Comprehensive textbook on temporal logics, model checking algorithms, and verification techniques.
 
-- **"Practical TLA+" by Hillel Wayne**  
-  TLA+ (Temporal Logic of Actions) is a language for modeling systems to find concurrency bugs and architectural flaws in the design phase. Written by Leslie Lamport (Turing Award winner). Read the first half and apply it to simple agent protocols.
-  
-  **The moat**: Most architects guess how their distributed agents will interact. With TLA+, you can model interactions, run the model checker, and find the exact sequence that causes failures.
+- **["Practical TLA+"](https://lamport.azurewebsites.net/tla/book.html)** by Hillel Wayne  
+  TLA+ (Temporal Logic of Actions) helps find concurrency bugs and architectural flaws during design. Written about a language by Leslie Lamport (Turing Award winner).
 
-- **[TLA+ Video Course by Leslie Lamport](https://lamport.azurewebsites.net/video/videos.html)** 🎥  
-  Leslie Lamport (Turing Award winner) is the "Brian Douglas" of this field - quirky, uses funny examples (like "Die Hard" water jug puzzles), and focuses entirely on thinking rather than syntax.
+- **[TLA+ Video Course](https://lamport.azurewebsites.net/video/videos.html)** by Leslie Lamport 🎥  
+  Quirky lectures using concrete examples (like "Die Hard" water jug puzzles) focused on thinking over syntax.
   
-  **The aha moment**: TLA+ is not a programming language; it is a way to write down the "physics" of your system to see if the laws of nature allow it to crash.
+  **Key insight**: TLA+ models the "physics" of your system to identify if failures are possible.
   
-  **Start here**: Lectures 1-4 to understand "system state" and how to model distributed agent interactions.
+  **Start here**: Lectures 1-4 for understanding system state and modeling distributed agent interactions.
 
 ---
 
 ## Neuro-Symbolic and Constrained Decoding
 
-The "compiler layer" for reliable code generation - ensuring deterministic outputs from non-deterministic models.
+Ensuring deterministic outputs from non-deterministic models through formal constraints.
 
 ### Key Papers
-- **"Efficient Guided Generation for Large Language Models"** (The Guidance Paper) by Willard & Louf (2023)  
-  The foundational Microsoft Research paper behind the Guidance library. Proves that constraining the model during inference (not after) is mathematically superior to rejection sampling. Explains the "prefix matching" algorithm you need to understand. [Guidance Library](https://github.com/guidance-ai/guidance)
+- **["Efficient Guided Generation for Large Language Models"](https://arxiv.org/abs/2307.09702)** by Willard & Louf (2023)  
+  Foundational work behind the Guidance library. Shows constraining during inference is superior to rejection sampling.
 
-- **"Synchromesh: Reliable Code Generation from Pre-trained Language Models"** by Poesia et al. (2022)  
-  A simpler, more readable introduction to constrained decoding. Introduces "Target Similarity Tuning" and "Constrained Semantic Decoding." Academic proof that you can force a non-deterministic model to output deterministic code 100% of the time.
+- **["Synchromesh: Reliable Code Generation from Pre-trained Language Models"](https://arxiv.org/abs/2201.11227)** by Poesia et al. (2022)  
+  Introduces "Target Similarity Tuning" and "Constrained Semantic Decoding" for reliable code generation.
 
 ### Formal Language Theory
-- **"Introduction to the Theory of Computation" by Michael Sipser**  
-  The classic CS textbook on the mathematical foundations of computation.
+- **"Introduction to the Theory of Computation"** by Michael Sipser  
+  Classic textbook on the mathematical foundations of computation.
   
   **Focus:**
-  - **Chapter 1: Regular Languages** - The math behind Regex and Outlines
-  - **Chapter 2: Context-Free Languages** - The math behind parsers and stack machines
-  
-  Skip the complexity theory (P vs NP) unless you enjoy the mathematics.
+  - **Chapter 1: Regular Languages** - Mathematics behind regex and finite automata
+  - **Chapter 2: Context-Free Languages** - Mathematics behind parsers and stack machines
 
-- **[Easy Theory - Theory of Computation (YouTube)](https://www.youtube.com/@easytheory)** 🎥  
-  The closest to a "Khan Academy / Brian Douglas" for theoretical CS. Uses a digital whiteboard to visually draw Finite State Machines (FSMs) and walks through the logic step-by-step.
+- **[Easy Theory - Theory of Computation](https://www.youtube.com/@easytheory)** 🎥  
+  Visual guide using digital whiteboard to draw Finite State Machines and explain logic.
   
   **Essential playlist**: "Theory of Computation"
-  - Watch videos on **DFA** (Deterministic Finite Automata).
-  - Watch videos on **Context-Free Grammars**.
-  
-  This is the visual guide to the Sipser textbook - perfect for understanding the foundations of constrained generation.
+  - Videos on **DFA** (Deterministic Finite Automata).
+  - Videos on **Context-Free Grammars**.
 
 ### SMT Solvers and Symbolic Execution
-- **"Programming Z3"** (SMT Solver Tutorial)  
-  Z3 is an SMT (Satisfiability Modulo Theories) solver from Microsoft Research. You state a logic problem (e.g., "Is there any input X that crashes this function?"), and Z3 determines satisfiability. This is the engine behind symbolic execution and modern verification - the "reasoning engine" for code.
+- **["Programming Z3"](https://theory.stanford.edu/~nikolaj/programmingz3.html)** (SMT Solver Tutorial)  
+  Z3 is an SMT (Satisfiability Modulo Theories) solver from Microsoft Research for determining logical satisfiability.
   
-  **Action**: Try the Python bindings (`z3-solver`). It feels like magic.
+  **Try**: Python bindings (`z3-solver`).
 
-- **[Guided Hacking - Z3 Explained (YouTube)](https://www.youtube.com/watch?v=56IIrBZy9Rc)** 🎥  
-  SMT solvers are usually taught in purely mathematical terms. This video breaks down Z3 as a practical tool for "solving puzzles," which is exactly how you should view it as an architect. Shows you how to turn a logic problem into Python code that Z3 can solve.
+- **[Guided Hacking - Z3 Explained](https://www.youtube.com/watch?v=56IIrBZy9Rc)** 🎥  
+  Practical introduction to Z3 as a tool for solving logic puzzles and turning constraints into Python code.
 
 ---
 
 ## Hierarchical Planning and Self-Correction
 
-Adding feedback loops and skill libraries to agent architectures - the "manager layer."
+Feedback loops and skill libraries for agent architectures.
 
 ### Self-Correcting Agents
-- **"Reflexion: Language Agents with Verbal Reinforcement Learning"** by Shinn et al. (2023)  
-  Instead of just planning, this paper adds self-correction. Connects control theory (feedback loops) with agents - showing how an agent can examine its own error logs and update short-term memory to avoid repeating mistakes.
+- **["Reflexion: Language Agents with Verbal Reinforcement Learning"](https://arxiv.org/abs/2303.11366)** by Shinn et al. (2023)  
+  Agents that examine error logs and update short-term memory to avoid repeating mistakes.
 
 ### Skill Library Evolution
-- **"Voyager: An Open-Ended Embodied Agent with Large Language Models"** by Wang et al. (2023)  
-  A Minecraft agent paper that demonstrates "skill library evolution." The agent writes code, verifies it works, and saves it to a permanent library for future retrieval. The blueprint for agents that get smarter over time through experience accumulation.
+- **["Voyager: An Open-Ended Embodied Agent with Large Language Models"](https://arxiv.org/abs/2305.16291)** by Wang et al. (2023)  
+  Demonstrates skill library evolution where agents write, verify, and store code for future retrieval.
 
 ---
 
@@ -217,22 +203,22 @@ Ensuring agents produce valid, safe outputs through formal grammars and constrai
 
 ## Foundational Texts
 
-Core academic resources that provide rigorous theoretical foundations.
+Core academic resources for theoretical foundations.
 
 ### Artificial Intelligence
-- **"Artificial Intelligence: A Modern Approach" by Russell & Norvig**  
-  The comprehensive AI textbook. Covers search, logic, planning, learning, and more.
+- **"Artificial Intelligence: A Modern Approach"** by Russell & Norvig ([website](http://aima.cs.berkeley.edu/))  
+  Comprehensive AI textbook covering search, logic, planning, and learning.
 
 ### Reinforcement Learning
-- **"Reinforcement Learning: An Introduction" by Sutton & Barto**  
-  The definitive RL textbook. Covers MDPs, value functions, policy gradients, and exploration.
+- **["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-2nd.html)** by Sutton & Barto  
+  Covers MDPs, value functions, policy gradients, and exploration.
 
 ### Probabilistic Reasoning
-- **"Probabilistic Graphical Models" by Daphne Koller and Nir Friedman**  
-  Bayesian networks, Markov networks, inference algorithms.
+- **"Probabilistic Graphical Models"** by Daphne Koller and Nir Friedman  
+  Bayesian networks, Markov networks, and inference algorithms.
 
-- **"Pattern Recognition and Machine Learning" by Christopher Bishop**  
-  Comprehensive coverage of probabilistic models and learning.
+- **["Pattern Recognition and Machine Learning"](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/)** by Christopher Bishop  
+  Probabilistic models and machine learning fundamentals.
 
 ---
 
@@ -241,11 +227,11 @@ Core academic resources that provide rigorous theoretical foundations.
 Contemporary research on building capable, reliable agents.
 
 ### Key Papers
-- **"ReAct: Synergizing Reasoning and Acting in Language Models"** (Yao et al., 2022)  
-  Interleaving reasoning traces with action steps for improved agent performance.
+- **["ReAct: Synergizing Reasoning and Acting in Language Models"](https://arxiv.org/abs/2210.03629)** by Yao et al. (2022)  
+  Interleaving reasoning traces with action steps.
 
-- **"Toolformer: Language Models Can Teach Themselves to Use Tools"** (Schick et al., 2023)  
-  Self-supervised learning for tool use without human demonstrations.
+- **["Toolformer: Language Models Can Teach Themselves to Use Tools"](https://arxiv.org/abs/2302.04761)** by Schick et al. (2023)  
+  Self-supervised learning for tool use.
 
 ### Agent Architectures
 - **ReAct**: Reason + Act in interleaved manner
@@ -257,39 +243,37 @@ Contemporary research on building capable, reliable agents.
 
 ## Systems Thinking and Distributed Systems
 
-Understanding reliability, scalability, and how complex systems fail in production.
+Reliability, scalability, and failure modes in production systems.
 
 ### Distributed Systems Reliability
-- **"Designing Data-Intensive Applications" (DDIA) by Martin Kleppmann**  
-  Essential reading and the definitive guide to modern systems reliability. Explains "reliability," "scalability," and "maintainability" not as buzzwords but as trade-offs in data encoding, replication, and partitioning.
+- **["Designing Data-Intensive Applications"](https://dataintensive.net/)** by Martin Kleppmann  
+  Modern systems reliability covering replication, partitioning, consistency, and consensus.
   
-  **Focus**: Chapters 5-9 (Replication, Partitioning, Consistency, Consensus)
+  **Focus**: Chapters 5-9
 
 - **[Jepsen: Distributed Systems Safety Research](https://jepsen.io/)** by Kyle Kingsbury  
-  A legendary series where Kyle takes popular databases (MongoDB, Postgres, Kafka) and subjects them to network partitions to see if they lose data. Bridges the gap between theory (CAP Theorem) and reality (what actually happens when a node fails).
-  
-  **The lesson**: "Distributed systems are always broken." This teaches you how they break.
+  Testing popular databases (MongoDB, Postgres, Kafka) under network partitions to verify data safety guarantees.
 
 ### System Failure Philosophy  
-- **"How Complex Systems Fail" by Richard Cook**  
-  A short 4-page read on the philosophy of failure (also referenced in Control Theory section). Essential for understanding system-level thinking about reliability.
+- **["How Complex Systems Fail"](https://how.complexsystems.fail/)** by Richard Cook  
+  4-page paper on failure philosophy (also in Control Theory section).
 
 ---
 
 ## Learning Theory and Alignment
 
-Understanding how agents learn and ensuring they learn what we intend.
+Agent learning and alignment with intended objectives.
 
 ### Core Resources
-- **"The RLHF Book" by Nathan Lambert et al.**  
-  Comprehensive guide to Reinforcement Learning from Human Feedback. Covers reward modeling, preference learning, and alignment. [RLHF Book](https://rlhfbook.com/)
+- **["The RLHF Book"](https://rlhfbook.com/)** by Nathan Lambert et al.  
+  Reinforcement Learning from Human Feedback, covering reward modeling, preference learning, and alignment.
 
 ### Alignment and Safety
-- **"Concrete Problems in AI Safety"** by Amodei et al. (2016)  
-  Classic paper identifying key safety challenges: negative side effects, reward hacking, scalable oversight, safe exploration, robustness.
+- **["Concrete Problems in AI Safety"](https://arxiv.org/abs/1606.06565)** by Amodei et al. (2016)  
+  Key safety challenges: negative side effects, reward hacking, scalable oversight, safe exploration, robustness.
 
-- **"Specification Gaming: The Flip Side of AI Ingenuity"** by DeepMind (2020)  
-  Catalog of examples where AI systems exploit loopholes in their reward specifications, demonstrating the importance of careful objective design.
+- **["Specification Gaming: The Flip Side of AI Ingenuity"](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/)** by DeepMind (2020)  
+  Examples of AI systems exploiting reward specification loopholes.
 
 ### Key Concepts
 - **Reward Modeling**: Learning human preferences
@@ -301,21 +285,21 @@ Understanding how agents learn and ensuring they learn what we intend.
 
 ## Advanced Topics
 
-Strategic horizon resources for long-term research and development (6-12 months out).
+Long-term research directions (6-12 months out).
 
 ### World Models and Predictive Architectures
 - **JEPA Papers (Joint Embedding Predictive Architectures)** by Yann LeCun  
-  Theory behind "world models" - predicting abstract states rather than pixels. The mental model for building data simulators and abstract representations of state spaces.
+  Theory of world models that predict abstract states rather than pixels.
 
 ### Planning with Language Models
-- **Google's "Learning to Plan" Papers**  
-  Search for papers on "Chain of Hindsight" and "Tree-of-Thoughts" to see how leading labs merge classical planning (Tier 1) with modern learning approaches (Tier 2). Shows the evolution from prompt engineering to structured search.
+- **Learning to Plan Papers**  
+  Papers on "Chain of Hindsight" and "Tree-of-Thoughts" showing how to merge classical planning with modern learning.
 
 ---
 
 ## Contributing
 
-This is a living document. If you know of excellent resources on control theory, formal methods, planning, or formal languages applied to AI agents, please contribute!
+This is a living document. Contributions of resources on control theory, formal methods, planning, or formal languages applied to AI agents are welcome.
 
 ---
 
