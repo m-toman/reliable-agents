@@ -128,7 +128,7 @@ How do we *prove* that agents will behave correctly?
   Comprehensive textbook on temporal logics, model checking algorithms, and verification techniques.
 
 - **["Practical TLA+"](https://lamport.azurewebsites.net/tla/book.html)** by Hillel Wayne  
-  TLA+ (Temporal Logic of Actions) helps find concurrency bugs and architectural flaws during design. Written about a language by Leslie Lamport (Turing Award winner).
+  Covers TLA+ (Temporal Logic of Actions), a language created by Leslie Lamport (Turing Award winner), for finding concurrency bugs and architectural flaws during design.
 
 - **[TLA+ Video Course](https://lamport.azurewebsites.net/video/videos.html)** by Leslie Lamport 🎥  
   Quirky lectures using concrete examples (like "Die Hard" water jug puzzles) focused on thinking over syntax.
@@ -214,7 +214,7 @@ Core academic resources for theoretical foundations.
   Covers MDPs, value functions, policy gradients, and exploration.
 
 ### Probabilistic Reasoning
-- **"Probabilistic Graphical Models"** by Daphne Koller and Nir Friedman  
+- **["Probabilistic Graphical Models"](https://mitpress.mit.edu/9780262013192/probabilistic-graphical-models/)** by Daphne Koller and Nir Friedman  
   Bayesian networks, Markov networks, and inference algorithms.
 
 - **["Pattern Recognition and Machine Learning"](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/)** by Christopher Bishop  
