@@ -88,8 +88,8 @@ Ensuring agents produce valid, safe outputs through formal grammars and constrai
 - **"Efficient Guided Generation for Large Language Models"** by Willard & Louf (2023)  
   Introduces efficient algorithms for constraining LLM outputs to valid formal languages (JSON, regex, CFG). The foundational work behind the Guidance library. [Guidance Library](https://github.com/guidance-ai/guidance)
 
-- **"Grammar Prompting for Domain-Specific Language Generation"** by Wang et al. (2023)  
-  Techniques for using formal grammars to guide generation and ensure outputs conform to domain-specific languages.
+- **"Grammar Prompting for Domain-Specific Language Generation"** by Bailin Wang et al. (2023)  
+  Techniques for using formal grammars to guide generation and ensure outputs conform to domain-specific languages. Explores grammar-based prompting for structured output generation.
 
 ### Techniques
 - **Context-Free Grammars (CFG)**: BNF, EBNF for structured output
