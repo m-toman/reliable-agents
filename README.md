@@ -74,9 +74,11 @@ How do we *prove* that agents will behave correctly?
 - **Contracts and Assertions**: Pre/post conditions, invariants
 
 ### Resources
-- **"Principles of Model Checking" by Christel Baier and Joost-Pieter Katoen**
-- **"Formal Verification of Hardware and Software Systems" by Anthony Widjaja Lin**
-- **[TLA+ Video Course by Leslie Lamport](https://lamport.azurewebsites.net/video/videos.html)**
+- **"Principles of Model Checking" by Christel Baier and Joost-Pieter Katoen**  
+  Comprehensive textbook covering temporal logics, model checking algorithms, and verification techniques.
+
+- **[TLA+ Video Course by Leslie Lamport](https://lamport.azurewebsites.net/video/videos.html)**  
+  Learn TLA+ (Temporal Logic of Actions) from its creator for specifying and verifying concurrent and distributed systems.
 
 ---
 
@@ -85,11 +87,11 @@ How do we *prove* that agents will behave correctly?
 Ensuring agents produce valid, safe outputs through formal grammars and constrained decoding.
 
 ### Key Papers
-- **"Efficient Guided Generation for Large Language Models"** by Willard & Louf (2023)  
-  Introduces efficient algorithms for constraining LLM outputs to valid formal languages (JSON, regex, CFG). The foundational work behind the Guidance library. [Guidance Library](https://github.com/guidance-ai/guidance)
+- **"Guidance: Enabling Fast and Controllable Text Generation with Structured Generation"** by Willard & Louf (2023)  
+  Introduces efficient algorithms for constraining LLM outputs using context-free grammars, regular expressions, and other formal specifications. The foundational work behind the Guidance library. [Guidance Library](https://github.com/guidance-ai/guidance)
 
-- **"Grammar Prompting for Domain-Specific Language Generation"** by Bailin Wang et al. (2023)  
-  Techniques for using formal grammars to guide generation and ensure outputs conform to domain-specific languages. Explores grammar-based prompting for structured output generation.
+- **"Constraining Language Models with Formal Grammars"**  
+  Techniques for using context-free grammars and parser-guided decoding to ensure LLM outputs conform to domain-specific languages and structured formats.
 
 ### Techniques
 - **Context-Free Grammars (CFG)**: BNF, EBNF for structured output
@@ -161,8 +163,8 @@ Understanding how agents learn and ensuring they learn what we intend.
 - **"Concrete Problems in AI Safety"** by Amodei et al. (2016)  
   Classic paper identifying key safety challenges: negative side effects, reward hacking, scalable oversight, safe exploration, robustness.
 
-- **"AI Alignment: A Comprehensive Survey"** by Ji et al. (2024)  
-  Comprehensive survey covering value learning, corrigibility, transparency, and verification approaches for AI alignment.
+- **"Specification Gaming: The Flip Side of AI Ingenuity"** by DeepMind (2020)  
+  Catalog of examples where AI systems exploit loopholes in their reward specifications, demonstrating the importance of careful objective design.
 
 ### Key Concepts
 - **Reward Modeling**: Learning human preferences
