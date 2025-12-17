@@ -1,6 +1,8 @@
 # Reliable Agents: A Control-Theoretic Perspective
 
-A curated collection of resources for building reliable AI agents through control theory, formal verification, planning, and formal languages. Rather than focusing on implementation patterns, this guide emphasizes the mathematical and systems-engineering foundations for agent reliability.
+A curated collection of resources for building reliable AI agents through control theory, formal verification, planning, and formal languages. Rather than focusing on agent implementation patterns and LLM basics, this collection emphasizes the mathematical and systems-engineering foundations for agent reliability.
+
+The outline of this document is LLM-generated (it's an Agent-related document after all) but Human reviews will be added over time.
 
 ## Table of Contents
 - [Getting Started: Architect's Core](#getting-started-architects-core)
@@ -23,19 +25,29 @@ A curated collection of resources for building reliable AI agents through contro
 Resources for immediate practical application in building reliable agents.
 
 ### Industry Best Practices
-- **[Google Agent Whitepapers](https://deepmind.google/)**
-  - **Agent Tools & Interoperability**: Understanding MCP (Model Context Protocol) and tool definitions
-  - **Context Engineering**: Sessions and memory management
-  - **Agent Quality**: Evaluation and reliability metrics
-  - **Prototype to Production**: Scaling considerations
+- **Google Agent Whitepapers**
+  - [**Introduction to Agents**](https://www.kaggle.com/whitepaper-introduction-to-agents)  
+  - [**Agent Tools & Interoperability**](https://www.kaggle.com/whitepaper-agent-tools-and-interoperability-with-mcp): Understanding MCP (Model Context Protocol) and tool definitions
+  - [**Context Engineering**](https://www.kaggle.com/whitepaper-context-engineering-sessions-and-memory): Sessions and memory management
+  - [**Agent Quality**](https://www.kaggle.com/whitepaper-agent-quality): Evaluation and reliability metrics
+  - [**Prototype to Production**](https://www.kaggle.com/whitepaper-prototype-to-production): Scaling considerations
+
+  **Verdict**: Great overview over current agent development practices. Obviously does some advertising for Google's offerings but still general enough to be useful.
 
 ### Core AI Textbook
 - **"Artificial Intelligence: A Modern Approach" (AIMA)** by Stuart Russell and Peter Norvig ([website](http://aima.cs.berkeley.edu/))
   
-  **Focus chapters:**
+  **Focus chapters: (different by edition)**
   - **Chapter 3: Solving Problems by Searching** - State-space search fundamentals
   - **Chapters 10 & 11: Classical Planning** - Agent planning with STRIPS and PDDL
   - **Chapters 16 & 17: Utility Theory & MDPs** - Decision-making under uncertainty
+ 
+  **Verdict:**: The classic, focus on chapters about Planning and Agents. There is also an older [Udacity course](https://www.udacity.com/course/intro-to-artificial-intelligence--cs271) taught by Peter Norvig.
+
+### LLM Basics
+- **Build a Large Language Model (From Scratch)** by Sebastian Raschka ([website]https://www.manning.com/books/build-a-large-language-model-from-scratch)
+
+**Verdict:** Builds the most important LLM concepts from the ground up, flows well.
 
 ### Learning from Human Feedback
 - **["The RLHF Book"](https://rlhfbook.com/)** by Nathan Lambert et al.
@@ -55,7 +67,9 @@ Understanding agents as dynamical systems opens up powerful analytical tools fro
 - **[Brian Douglas - Control Systems Lectures](https://www.youtube.com/user/ControlLectures)** 🎥  
   Covers feedback control, stability analysis, and state-space methods for maintaining agent behavior within safe boundaries.
   
-  **Recommended**: Start with the first 2 videos on Classical Control Theory.
+  **Recommended**: Start with the first 2-3 videos on Classical Control Theory, Open/Closed Control loops etc.
+
+  **Verdict:** The videos present the material in an enjoyable style, probably not worth diving too deep into the LTI aspects, Laplace transformation etc. but just understand the concepts.
 
 ### Books
 - **["Engineering a Safer World: Systems Thinking Applied to Safety"](https://mitpress.mit.edu/9780262533690/engineering-a-safer-world/)** by Nancy Leveson  
